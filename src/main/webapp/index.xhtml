@@ -6,7 +6,27 @@
         <title>Hesap Makinesi</title>
     </h:head>
     <h:body>
-        Hello from Facelets
-    </h:body>
-</html>
+        <h1>Hesap Makinesi </h1> 
+        <h:form>
+            <div>
+                <h:outputLabel value="sayi1: "/>
+                <h:inputText value="#{hesapMakinesi.sayi1}"/>
+            </div>
+            <div>
+                <h:outputLabel value="sayi2: "/>
+                <h:inputText value="#{hesapMakinesi.sayi2}"/>
+            </div>
+            <div>
+                <h:commandButton value="Topla" action="#{hesapMakinesi.topla()}"/>
+                <h:commandButton value="Cikar" action="#{hesapMakinesi.cikar()}"/>
+                <h:commandButton value="Topla" action="#{hesapMakinesi.carp()}"/>
+                <h:commandButton value="Topla" action="#{hesapMakinesi.böl()}"/>
+            </div>
+            <div>
+                <h:outputLabel value="Sonuc: "/>
+                <h:outputText value="#{hesapMakinesi.sonuc}"/>
+            </div>  
+      </h:form>
+     </h:body>
+ </html>
 
